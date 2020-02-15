@@ -33,4 +33,16 @@ Second way:
                            
                       Name:GSDetector
                       
-   
+ *Usage Guide
+      
+      (1) Open the GRL model to be analyized
+      
+      (2) Go to Window Menu -> Preferences -> jUCMNav -> GRL Bad Smells Detection Preferences 
+            Specify preferences as prefered
+            If no preferences, click on Restore Defaults to use default values
+            Close the Preferences page
+     
+      (3) Go to the main editor and click on the torch button. This button can be found in:
+            (1) The jUCMNav labeled as "GRL Bad Smell Detector"
+            (2) In the toolbar
+            (3) Dropdown menu associated with jUCMNav in the Navigator
