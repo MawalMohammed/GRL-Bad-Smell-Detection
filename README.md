@@ -14,6 +14,7 @@ This repository contains an Eclipse plugin tool for detecting GRL bad smells bas
      
         org.eclipse.jucmnav.grl.GSDetector/src/org/eclipse/jucmnav/grl/GSDetector
 
+
 *Installation Instructions:
 
 First way:
@@ -33,7 +34,8 @@ Second way:
                            
                       Name:GSDetector
                       
- *Usage Guide
+
+*Usage Guide
       
       (1) Open the GRL model to be analyized
       
