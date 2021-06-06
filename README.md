@@ -50,3 +50,4 @@ Second way:
             (1) The jUCMNav labeled as "GRL Bad Smell Detector"
             (2) In the toolbar
             (3) Dropdown menu associated with jUCMNav in the Navigator
+
