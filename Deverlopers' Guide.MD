@@ -1,16 +1,32 @@
-GSDetector Developers’ Guide
+# GSDetector Developers’ Guide
 
-Objective: This guide is prepared to help developers extend the functionality of GSDetector by presenting the steps needed to detect the instances of a new bad smell. 
-Prerequisite: Developers are expected to have a good background in programming with Java. They also expected to have a basic understating of Eclipse Plugin development.  
-Recommended: Developers are advised to make use of the available resources including the following:
-1.	The paper titled “GSDetector: A tool for automatic bad smell detection in GRL goal models”. This paper introduced the tool and explained several of its aspects including its structure, operation, and model transformation. 
-2.	The comments provided within the code as they explain several implementation details. 
-3.	The available code for reusing and quicker development as several code segments are structural and can be reused easily. 
-Developers’ Guide: To add the functionality of detecting a new bad smell, the following steps provides a rough guide for interested developers (Assume “NBS” is the new bad smell):
-1.	In the GRLBadSmellDetectionPreferences class, add the following:
-a)	A checkbox to enable and disable NBS detection.
-b)	A label to label the checkbox with NBS name.
-c)	A textbox for threshold setting (if needed). Note: Some bad smells might not need a threshold. 
+* Objective: 
+
+ 	This guide is prepared to help developers extend the functionality of GSDetector by presenting the steps needed to detect the instances of a new bad smell. 
+
+* Prerequisite: 
+
+	Developers are expected to have a good background in programming with Java. They also expected to have a basic understating of Eclipse Plugin development. 
+
+* Recommended:
+
+	Developers are advised to make use of the available resources including the following:
+
+		1.	The paper titled “GSDetector: A tool for automatic bad smell detection in GRL goal models”. This paper introduced the tool and explained several of its aspects including its structure, operation, and model transformation. 
+		2.	The comments provided within the code as they explain several implementation details. 
+		3.	The available code for reusing and quicker development as several code segments are structural and can be reused easily. 
+
+* Developers’ Guide: 
+
+    To add the functionality of detecting a new bad smell, the following steps provides a rough guide for interested developers (Assume “NBS” is the new bad smell):
+
+    1.	In the GRLBadSmellDetectionPreferences class, add the following:
+  
+        a. A checkbox to enable and disable NBS detection.
+        b. A label to label the checkbox with NBS name.
+        c. A textbox for threshold setting (if needed). Note: Some bad smells might not need a threshold.
+        
+        
 2.	In the GRLBSDetectorConstants class, add the following:
 a)	Two new variables to store the default values of the checkbox and textbox created in the previous step. The default values are used the first time the tool is installed or when the user press the “restore defaults” button in the preferences page.
 b)	Two new variables to store the user defined values of these checkbox and textbox. The user defined values are used when the user define new values. 
