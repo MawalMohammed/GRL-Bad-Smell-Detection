@@ -1,6 +1,8 @@
 package org.eclipse.jucmnav.grl.GSDetector;
 
 
+import javax.swing.JOptionPane;
+
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.preference.PreferencePage;
 import org.eclipse.swt.SWT;
@@ -19,7 +21,7 @@ import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
 /**
- * Copyright (C) 2020 Mawal Mohammed - All Rights Reserved
+ * Copyright (C) 2022 Mawal Mohammed - All Rights Reserved
  * You may use, distribute and modify this code under the
  * terms of the Eclipse Public License - v 2.0 ,
  */
@@ -189,27 +191,27 @@ public class GRLBadSmellDetectionPreferences extends PreferencePage implements
     private void initializeDefaults() {
      
         
-        overlyPopulatedModelBS.setSelection(GRLRefactoringConstants.Default_overlyPopulatedModelBS);
-        overlyPopulatedActorBS.setSelection(GRLRefactoringConstants.Default_overlyPopulatedActorBS);
-        overlyAmbitiousActorBS.setSelection(GRLRefactoringConstants.Default_overlyAmbitiousActorBS);
-        deepHierarchyBS.setSelection(GRLRefactoringConstants.Default_deepHierarchyBS);
-        overlyOperationalizedActorBS.setSelection(GRLRefactoringConstants.Default_overlyOperationalizedActorBS);
-        highlyCoupledActorBS.setSelection(GRLRefactoringConstants.Default_highlyCoupledActorBS);
-        highlyProliferatedGoalORSoftGoalBS.setSelection(GRLRefactoringConstants.Default_highlyProliferatedGoalORSoftGoalBS);
-        highlyProliferatedTaskBS.setSelection(GRLRefactoringConstants.Default_highlyProliferatedTaskBS);
-        possibilitiesExhausterBS.setSelection(GRLRefactoringConstants.Default_possibilitiesExhausterBS);
-        highlyCoupledElementBS.setSelection(GRLRefactoringConstants.Default_highlyCoupledElementBS);
+        overlyPopulatedModelBS.setSelection(GRLBSDetectorConstants.Default_overlyPopulatedModelBS);
+        overlyPopulatedActorBS.setSelection(GRLBSDetectorConstants.Default_overlyPopulatedActorBS);
+        overlyAmbitiousActorBS.setSelection(GRLBSDetectorConstants.Default_overlyAmbitiousActorBS);
+        deepHierarchyBS.setSelection(GRLBSDetectorConstants.Default_deepHierarchyBS);
+        overlyOperationalizedActorBS.setSelection(GRLBSDetectorConstants.Default_overlyOperationalizedActorBS);
+        highlyCoupledActorBS.setSelection(GRLBSDetectorConstants.Default_highlyCoupledActorBS);
+        highlyProliferatedGoalORSoftGoalBS.setSelection(GRLBSDetectorConstants.Default_highlyProliferatedGoalORSoftGoalBS);
+        highlyProliferatedTaskBS.setSelection(GRLBSDetectorConstants.Default_highlyProliferatedTaskBS);
+        possibilitiesExhausterBS.setSelection(GRLBSDetectorConstants.Default_possibilitiesExhausterBS);
+        highlyCoupledElementBS.setSelection(GRLBSDetectorConstants.Default_highlyCoupledElementBS);
         
-        overlyPopulatedModelThreshold.setText(GRLRefactoringConstants.Default_overlyPopulatedModelThreshold);
-        overlyPopulatedActorThreshold.setText(GRLRefactoringConstants.Default_overlyPopulatedActorThreshold);
-        overlyAmbitiousActorThreshold.setText(GRLRefactoringConstants.Default_overlyAmbitiousActorThreshold);
-        deepHierarchyThreshold.setText(GRLRefactoringConstants.Default_deepHierarchyThreshold);
-        overlyOperationalizedActorThreshold.setText(GRLRefactoringConstants.Default_overlyOperationalizedActorThreshold);
-        highlyCoupledActorThreshold.setText(GRLRefactoringConstants.Default_highlyCoupledActorThreshold);
-        highlyProliferatedGoalORSoftGoalThreshold.setText(GRLRefactoringConstants.Default_highlyProliferatedGoalORSoftGoalThreshold);
-        highlyProliferatedTaskThreshold.setText(GRLRefactoringConstants.Default_highlyProliferatedTaskThreshold);
-        possibilitiesExhausterThreshold.setText(GRLRefactoringConstants.Default_possibilitiesExhausterThreshold);
-        highlyCoupledElementThreshold.setText(GRLRefactoringConstants.Default_highlyCoupledElementThreshold);
+        overlyPopulatedModelThreshold.setText(GRLBSDetectorConstants.Default_overlyPopulatedModelThreshold);
+        overlyPopulatedActorThreshold.setText(GRLBSDetectorConstants.Default_overlyPopulatedActorThreshold);
+        overlyAmbitiousActorThreshold.setText(GRLBSDetectorConstants.Default_overlyAmbitiousActorThreshold);
+        deepHierarchyThreshold.setText(GRLBSDetectorConstants.Default_deepHierarchyThreshold);
+        overlyOperationalizedActorThreshold.setText(GRLBSDetectorConstants.Default_overlyOperationalizedActorThreshold);
+        highlyCoupledActorThreshold.setText(GRLBSDetectorConstants.Default_highlyCoupledActorThreshold);
+        highlyProliferatedGoalORSoftGoalThreshold.setText(GRLBSDetectorConstants.Default_highlyProliferatedGoalORSoftGoalThreshold);
+        highlyProliferatedTaskThreshold.setText(GRLBSDetectorConstants.Default_highlyProliferatedTaskThreshold);
+        possibilitiesExhausterThreshold.setText(GRLBSDetectorConstants.Default_possibilitiesExhausterThreshold);
+        highlyCoupledElementThreshold.setText(GRLBSDetectorConstants.Default_highlyCoupledElementThreshold);
        
       }
 
@@ -220,29 +222,29 @@ public class GRLBadSmellDetectionPreferences extends PreferencePage implements
     	
     	IPreferenceStore store =  org.eclipse.jucmnav.grl.GSDetector.Activator.getDefault().getPreferenceStore();
     	
-        overlyPopulatedModelBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_overlyPopulatedModelBS));
-        overlyPopulatedActorBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_overlyPopulatedActorBS));
-        overlyAmbitiousActorBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_overlyAmbitiousActorBS));
-        deepHierarchyBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_deepHierarchyBS));
-        overlyOperationalizedActorBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_overlyOperationalizedActorBS));
-        highlyCoupledActorBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_highlyCoupledActorBS));
-        highlyProliferatedGoalORSoftGoalBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_highlyProliferatedGoalORSoftGoalBS));
-        highlyProliferatedTaskBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_highlyProliferatedTaskBS));
-        possibilitiesExhausterBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_possibilitiesExhausterBS));
-        highlyCoupledElementBS.setSelection(store.getBoolean(GRLRefactoringConstants.PRE_highlyCoupledElementBS));
+        overlyPopulatedModelBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_overlyPopulatedModelBS));
+        overlyPopulatedActorBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_overlyPopulatedActorBS));
+        overlyAmbitiousActorBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_overlyAmbitiousActorBS));
+        deepHierarchyBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_deepHierarchyBS));
+        overlyOperationalizedActorBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_overlyOperationalizedActorBS));
+        highlyCoupledActorBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_highlyCoupledActorBS));
+        highlyProliferatedGoalORSoftGoalBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_highlyProliferatedGoalORSoftGoalBS));
+        highlyProliferatedTaskBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_highlyProliferatedTaskBS));
+        possibilitiesExhausterBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_possibilitiesExhausterBS));
+        highlyCoupledElementBS.setSelection(store.getBoolean(GRLBSDetectorConstants.PRE_highlyCoupledElementBS));
         
-        overlyPopulatedModelThreshold.setText(store.getString(GRLRefactoringConstants.PRE_overlyPopulatedModelThreshold));
-        overlyPopulatedActorThreshold.setText(store.getString(GRLRefactoringConstants.PRE_overlyPopulatedActorThreshold));
-        overlyAmbitiousActorThreshold.setText(store.getString(GRLRefactoringConstants.PRE_overlyAmbitiousActorThreshold));
-        deepHierarchyThreshold.setText(store.getString(GRLRefactoringConstants.PRE_deepHierarchyThreshold));
-        overlyOperationalizedActorThreshold.setText(store.getString(GRLRefactoringConstants.PRE_overlyOperationalizedActorThreshold));
-        highlyCoupledActorThreshold.setText(store.getString(GRLRefactoringConstants.PRE_highlyCoupledActorThreshold));
-        highlyProliferatedGoalORSoftGoalThreshold.setText(store.getString(GRLRefactoringConstants.PRE_highlyProliferatedGoalORSoftGoalThreshold));
-        highlyProliferatedTaskThreshold.setText(store.getString(GRLRefactoringConstants.PRE_highlyProliferatedTaskThreshold));
-        possibilitiesExhausterThreshold.setText(store.getString(GRLRefactoringConstants.PRE_possibilitiesExhausterThreshold));
-        highlyCoupledElementThreshold.setText(store.getString(GRLRefactoringConstants.PRE_highlyCoupledElementThreshold));
+        overlyPopulatedModelThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_overlyPopulatedModelThreshold));
+        overlyPopulatedActorThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_overlyPopulatedActorThreshold));
+        overlyAmbitiousActorThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_overlyAmbitiousActorThreshold));
+        deepHierarchyThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_deepHierarchyThreshold));
+        overlyOperationalizedActorThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_overlyOperationalizedActorThreshold));
+        highlyCoupledActorThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_highlyCoupledActorThreshold));
+        highlyProliferatedGoalORSoftGoalThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_highlyProliferatedGoalORSoftGoalThreshold));
+        highlyProliferatedTaskThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_highlyProliferatedTaskThreshold));
+        possibilitiesExhausterThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_possibilitiesExhausterThreshold));
+        highlyCoupledElementThreshold.setText(store.getString(GRLBSDetectorConstants.PRE_highlyCoupledElementThreshold));
         
-       // textField.setText(store.getString(GRLRefactoringConstants.PRE_TEXT));
+       // textField.setText(store.getString(GRLBSDetectorConstants.PRE_TEXT));
     }
 
     /** (non-Javadoc)
@@ -275,29 +277,112 @@ public class GRLBadSmellDetectionPreferences extends PreferencePage implements
     private void storeValues() {
     	
         IPreferenceStore store = getPreferenceStore();
-        store.setValue(GRLRefactoringConstants.PRE_overlyPopulatedModelBS, overlyPopulatedModelBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_overlyPopulatedActorBS, overlyPopulatedActorBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_overlyAmbitiousActorBS, overlyAmbitiousActorBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_deepHierarchyBS, deepHierarchyBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_overlyOperationalizedActorBS, overlyOperationalizedActorBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_highlyCoupledActorBS, highlyCoupledActorBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_highlyProliferatedGoalORSoftGoalBS, highlyProliferatedGoalORSoftGoalBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_highlyProliferatedTaskBS, highlyProliferatedTaskBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_possibilitiesExhausterBS, possibilitiesExhausterBS.getSelection());
-        store.setValue(GRLRefactoringConstants.PRE_highlyCoupledElementBS, highlyCoupledElementBS.getSelection());
         
-        store.setValue(GRLRefactoringConstants.PRE_overlyPopulatedModelThreshold, overlyPopulatedModelThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_overlyPopulatedActorThreshold, overlyPopulatedActorThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_overlyAmbitiousActorThreshold, overlyAmbitiousActorThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_deepHierarchyThreshold, deepHierarchyThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_overlyOperationalizedActorThreshold, overlyOperationalizedActorThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_highlyCoupledActorThreshold, highlyCoupledActorThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_highlyProliferatedGoalORSoftGoalThreshold, highlyProliferatedGoalORSoftGoalThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_highlyProliferatedTaskThreshold, highlyProliferatedTaskThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_possibilitiesExhausterThreshold, possibilitiesExhausterThreshold.getText());
-        store.setValue(GRLRefactoringConstants.PRE_highlyCoupledElementThreshold, highlyCoupledElementThreshold.getText());
+        store.setValue(GRLBSDetectorConstants.PRE_overlyPopulatedModelBS, overlyPopulatedModelBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_overlyPopulatedActorBS, overlyPopulatedActorBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_overlyAmbitiousActorBS, overlyAmbitiousActorBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_deepHierarchyBS, deepHierarchyBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_overlyOperationalizedActorBS, overlyOperationalizedActorBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_highlyCoupledActorBS, highlyCoupledActorBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_highlyProliferatedGoalORSoftGoalBS, highlyProliferatedGoalORSoftGoalBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_highlyProliferatedTaskBS, highlyProliferatedTaskBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_possibilitiesExhausterBS, possibilitiesExhausterBS.getSelection());
+        store.setValue(GRLBSDetectorConstants.PRE_highlyCoupledElementBS, highlyCoupledElementBS.getSelection());
+
+        //The int type in Java any whole number from -2147483648 to 2147483647
+        try {
+        	int thresholdValue = Integer.parseInt(overlyPopulatedModelThreshold.getText()); //throws NumberFormatException if not int
+        	if(thresholdValue > 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException(); //throws NumberFormatException if not in the intended range
+        	store.setValue(GRLBSDetectorConstants.PRE_overlyPopulatedModelThreshold, thresholdValue);
+        	 }catch(NumberFormatException e){
+        		 JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as an Overly Populated Model Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        	 }
+        
+        try {
+        	int thresholdValue = Integer.parseInt(overlyPopulatedActorThreshold.getText());
+        	if(thresholdValue > 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();       		
+        	store.setValue(GRLBSDetectorConstants.PRE_overlyPopulatedActorThreshold, thresholdValue);
+        	}catch(NumberFormatException e){
+        		JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as an Overly Populated actor Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        	}
+        
+        try {
+        	int thresholdValue = Integer.parseInt(overlyAmbitiousActorThreshold.getText());
+        	if(thresholdValue > 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_overlyAmbitiousActorThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+          		 JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as an Overly Ambitious Actor Threshold", "Error", JOptionPane.CANCEL_OPTION);
+          	 }
+           
+        try {
+        	int thresholdValue = Integer.parseInt(deepHierarchyThreshold.getText());
+        	if(thresholdValue > 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_deepHierarchyThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+          		 JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as a Deep Heirarchy Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        }
+           
+        try {
+        	float thresholdValue = Float.parseFloat(overlyOperationalizedActorThreshold.getText());
+        	if(thresholdValue > Math.pow(2, 127) || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_overlyOperationalizedActorThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+        	JOptionPane.showConfirmDialog(null, "Please enter a float number between 0 and " + Math.pow(2, 127) + "as an Overly Operationalized Actor Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        }
+           
+        try {
+        	int thresholdValue = Integer.parseInt(highlyCoupledActorThreshold.getText());
+        	if(thresholdValue > 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_highlyCoupledActorThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+        	JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as Highly Coupled Actor Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        }
+           
+        try {
+        	int thresholdValue = Integer.parseInt(highlyProliferatedGoalORSoftGoalThreshold.getText());
+        	if(thresholdValue> 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_highlyProliferatedGoalORSoftGoalThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+        	JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as a Highly Proliferated Goal or SoftGoal Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        }
+           
+        try {
+        	int thresholdValue = Integer.parseInt(highlyProliferatedTaskThreshold.getText());
+        	if(thresholdValue> 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_highlyProliferatedTaskThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+        	JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as a Highly Proliferated Task Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        }
+           
+        try {
+        	int thresholdValue = Integer.parseInt(possibilitiesExhausterThreshold.getText());
+        	if(thresholdValue> 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+        	store.setValue(GRLBSDetectorConstants.PRE_possibilitiesExhausterThreshold, thresholdValue);
+        }catch(NumberFormatException e){
+        	JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as Possibilities Exhauster Threshold", "Error", JOptionPane.CANCEL_OPTION);
+        }
+           
+        try {
+        	int thresholdValue = Integer.parseInt(highlyCoupledElementThreshold.getText());
+        	if(thresholdValue> 2147483647 || thresholdValue < 0)
+        		throw new NumberFormatException();
+             store.setValue(GRLBSDetectorConstants.PRE_highlyCoupledElementThreshold, thresholdValue);
+         	 }catch(NumberFormatException e){
+         		 JOptionPane.showConfirmDialog(null, "Please enter an integer number between 0 and 2147483647 as Highly Coupled Element Threshold", "Error", JOptionPane.CANCEL_OPTION);
+         	 }
+                
+        
        
-      //  store.setValue(GRLRefactoringConstants.PRE_TEXT, textField.getText());
+      //  store.setValue(GRLBSDetectorConstants.PRE_TEXT, textField.getText());
     }
 
     /**
