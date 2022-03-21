@@ -2,7 +2,7 @@
 
 * Objective: 
 
- 	This guide is prepared to help developers extend the functionality of GSDetector by presenting the steps needed to detect the instances of a new bad smell. 
+ 	This guide is prepared to help developers extend the functionality of GSDetector by presenting the steps needed to add the functionality of the detection of the instances of a new bad smell. 
 
 * Prerequisite: 
 
