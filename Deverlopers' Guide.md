@@ -18,7 +18,7 @@
 
 * Developers’ Guide: 
 
-    To add the functionality of detecting a new bad smell, the following steps provides a rough guide for interested developers (Assume “NBS” is the new bad smell):
+    To add the functionality of detecting a new bad smell, the following steps provide a rough guide for interested developers (Assume “NBS” is the new bad smell):
     
 		1.	In the GRLBadSmellDetectionPreferences class, add the following:
   
