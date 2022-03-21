@@ -6,7 +6,7 @@
 
 * Prerequisite: 
 
-	Developers are expected to have a good background in programming with Java. They also expected to have a basic understating of Eclipse Plugin development. 
+	Developers are expected to have a good background in programming with Java. They are also expected to have a basic understating of Eclipse Plugin development. 
 
 * Recommended:
 
