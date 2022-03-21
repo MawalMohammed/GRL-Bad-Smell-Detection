@@ -22,9 +22,9 @@
 
     1.	In the GRLBadSmellDetectionPreferences class, add the following:
   
-        a. A checkbox to enable and disable NBS detection.
-        b. A label to label the checkbox with NBS name.
-        c. A textbox for threshold setting (if needed). Note: Some bad smells might not need a threshold.
+		a. A checkbox to enable and disable NBS detection.
+		b. A label to label the checkbox with NBS name.
+		c. A textbox for threshold setting (if needed). Note: Some bad smells might not need a threshold.
         
         
 2.	In the GRLBSDetectorConstants class, add the following:
