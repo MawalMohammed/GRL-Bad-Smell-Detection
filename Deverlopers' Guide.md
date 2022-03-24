@@ -37,7 +37,7 @@
 			a)	Examining the “transformGRL2ERD ()” function and the associated “ERD_*” variables to see if the data requirements for detecting the instances of NBS are available. If not, extend the “transformGRL2ERD ()” and the associated “ERD_*” variables according to the new requirements. 
 			b)	Adding an "if" condition to check whether the detection of the NBS is enabled by examining the value stored in the GRLBSDetectorConstants.java. 
 			c)	Adding a function call to the detector associated with the NBS by calling the function from the GRLBadSmellDetectors.java (see the next step) and pass the needed ERD_*  data variables. Note: Every bad smell has a detector.
-			d)	If needed, passing the threshold value associated with the NBS by retreving it from the data class in GRLBSDetectorConstants. java.
+			d)	If needed, passing the threshold value associated with the NBS by retrieving it from the data class in GRLBSDetectorConstants. java.
 			
 		4.	Update the GRLBadSmellDetectors.java by adding a new function (detector) to detect the instances of the NBS. In this function, do the following: 
 	
