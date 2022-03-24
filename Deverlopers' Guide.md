@@ -26,7 +26,7 @@
 			b) A label to label the checkbox with NBS name.
 			c) A textbox for threshold setting (if needed). Note: Some bad smells might not need a threshold.
 			
-		2.	Update the data in GRLBSDetectorConstants.java by adding the following:
+		2.	Update the data in the GRLBSDetectorConstants.java by adding the following:
 
 			a)	Two new variables to store the default values of the checkbox and textbox created in the previous step. The default values are used the first time the tool is installed or when the user press the “restore defaults” button in the preferences page.
 			b)	Two new variables to store the user defined values of these checkbox and textbox. The user defined values are used when the user define new values. 
