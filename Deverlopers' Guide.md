@@ -20,7 +20,7 @@
 
     To add the functionality of detecting a new bad smell, the following steps provide a rough guide for interested developers (Assume “NBS” is the new bad smell):
     
-		1.	Update the GUI by updating the GRLBadSmellDetectionPreferences.java, as follows:
+		1.	Update the GUI by updating the GRLBadSmellDetectionPreferences.java by adding the following:
   
 			a) A checkbox to enable and disable NBS detection  
 			b) A label to label the checkbox with NBS name.
