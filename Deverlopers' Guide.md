@@ -32,7 +32,7 @@
 			b)	Two new variables to store the user defined values of these checkbox and textbox. The user defined values are used when the user define new values. 
 			c)	Link these varaibles to the checkbox and textbox created in the previous step.
 			
-		3.	Update the GRLBadSmellsDetectorEngine.java by:
+		3.	Update GRLBadSmellsDetectorEngine.java by:
 	
 			a)	Examining the “transformGRL2ERD ()” function and the associated “ERD_*” variables to see if the data requirements for detecting the instances of NBS are available. If not, extend the “transformGRL2ERD ()” and the associated “ERD_*” variables according to the new requirements. 
 			b)	Adding an "if" condition to check whether the detection of the NBS is enabled by examining the value stored in the GRLBSDetectorConstants.java. 
@@ -44,4 +44,4 @@
 			a)	Add a function call to the detection query associated with the NBS on each targeted object (actor, element, etc.) by calling the query from the GRLBadSmellsDetectionQueries.java (see the next step) and pass the needed data to this query. 
 			b)	To report the detected instances of the NBS to the problems view in Eclipse workbench, write a new marker and pass to it the needed data.
 			
-		5.	Update the GRLBadSmellsDetectionQueries.java by adding a new function (query) to detect instances of NBS (Note: Every bad smell has a query). This function is supposed to return true or false for each examined object. Depending on the new bad smell, most of the coding is expected to happen in this step. In the previous steps, most of the coding is structural and, hence, several segments of the code can be reused with the appropriate modifications. 
+		5.	Update the GRLBadSmellsDetectionQueries.java by adding a new function (query) to detect the instances of NBS (Note: Every bad smell has a query). This function is supposed to return true or false for each examined object. Depending on the new bad smell, most of the coding is expected to happen in this step. In the previous steps, most of the coding is structural and, hence, several segments of the code can be reused with the appropriate modifications. 
