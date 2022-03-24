@@ -30,7 +30,7 @@
 
 			a)	Two new variables to store the default values of the checkbox and textbox created in the previous step. The default values are used the first time the tool is installed or when the user press the “restore defaults” button in the preferences page.
 			b)	Two new variables to store the user defined values of these checkbox and textbox. The user defined values are used when the user define new values. 
-			c)	Link these varaibles to the checkbox and textbox created in the previous step.
+			c)	Link these variables to the checkbox and textbox created in the previous step.
 			
 		3.	Update GRLBadSmellsDetectorEngine.java by:
 	
